@@ -88,22 +88,22 @@ fetch('http://localhost:3333/api/reports?candidateId=' + url.get('id')).then(fun
         if (report.id === id) {
             var interview = new Date(report.interviewDate);
 
-            $('#modal-candidate').append(report.candidateName);
+            $('#modal-candidate').html(report.candidateName);
             var company = $('<div>');
-            company.append(report.companyName);
-            $('#modal-company').append(company);
+            company.html(report.companyName);
+            $('#modal-company').html(company);
             var date = $('<div>');
-            date.append(interview.getDate() + '.' + interview.getMonth() + '.' + interview.getFullYear() + '.');
-            $('#modal-date').append(date);
+            date.html(interview.getDate() + '.' + interview.getMonth() + '.' + interview.getFullYear() + '.');
+            $('#modal-date').html(date);
             var phase = $('<div>');
-            phase.append(report.phase);
-            $('#modal-phase').append(phase);
+            phase.html(report.phase);
+            $('#modal-phase').html(phase);
             var status = $('<div>');
-            status.append(report.status);
-            $('#modal-status').append(status);
+            status.html(report.status);
+            $('#modal-status').html(status);
             var notes = $('<div>');
-            notes.append(report.note);
-            $('#modal-notes').append(notes)
+            notes.html(report.note);
+            $('#modal-notes').html(notes)
 
             var modal = $('#more-detail-modal');
             modal.modal();
