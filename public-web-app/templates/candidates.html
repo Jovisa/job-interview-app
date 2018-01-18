@@ -8,7 +8,7 @@
     <title>Candidates</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-baseline">
                     <div class="col col-12 col-md-4 col-lg-3  text-center">
-                        <h4 class="mt-3 mb-3">Interview Reports</h4>
+                        <h4 class="mt-3 mb-3 main-header">Interview Reports</h4>
                     </div>
                     <div class="col col-12 col-md-4 col-lg-3  text-center">
                         <a class="mt-3 mb-3 btn btn-secondary" href="./candidates.html">Candidates</a>
@@ -27,20 +27,21 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="row justify-content-between mt-3">
-            <div class="col col-12 col-md-4 col-lg-3">
-                <p class="my-1 text-center text-md-left">Candidates</p>
+    <div class="page">
+        <div class="container">
+            <div class="row justify-content-between pt-3 pb-3">
+                <div class="col col-12 col-md-4 col-lg-3">
+                    <p class="my-1 text-center text-md-left main-label">Candidates</p>
+                </div>
+                <div class="col col-12 col-md-4 col-lg-3">
+                    <input class="form-control my-1" type="text" placeholder="Search" onkeyup="filter(this)">
+                </div>
             </div>
-            <div class="col col-12 col-md-4 col-lg-3">
-                <input class="form-control my-1" type="text" placeholder="Search" onkeyup="filter(this)">
-            </div>
-        </div>
 
-        <div class="row" id="wrapper"></div>
+            <div class="row" id="wrapper"></div>
+        </div>
     </div>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="../js/candidates.js"></script>

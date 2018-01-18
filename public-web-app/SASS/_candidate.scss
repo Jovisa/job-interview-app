@@ -1,0 +1,31 @@
+.candidate {
+
+  &-link {
+    color: #000000;
+
+    .card {
+      border: none;
+    }
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+
+      .card {
+        box-shadow: 0 0 4px 3px #047aff;
+      }
+    }
+  }
+
+  &-label {
+    color: #ffffff;
+  }
+
+  &-text {
+    color: #ffffff;
+  }
+
+  &-report {
+    color: #ffffff;
+  }
+}

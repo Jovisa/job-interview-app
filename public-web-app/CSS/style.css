@@ -1,0 +1,48 @@
+.modal-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+
+.modal-text-label {
+  color: #a5a5a5;
+  font-size: 14px;
+  font-weight: bold; }
+
+.modal-title {
+  font-size: 20px;
+  color: #000; }
+
+.main-header {
+  color: #ffffff; }
+
+.candidate-link {
+  color: #000000; }
+  .candidate-link .card {
+    border: none; }
+  .candidate-link:hover {
+    color: #000;
+    text-decoration: none; }
+    .candidate-link:hover .card {
+      box-shadow: 0 0 4px 3px #047aff; }
+.candidate-label {
+  color: #ffffff; }
+.candidate-text {
+  color: #ffffff; }
+.candidate-report {
+  color: #ffffff; }
+
+.page {
+  background-color: #292c34;
+  height: calc(100vh - 70px); }
+  @media screen and (max-width: 768px) {
+    .page {
+      height: 100%; } }
+
+.main-label {
+  color: #ffffff;
+  font-size: 20px; }
+
+.reports-table {
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

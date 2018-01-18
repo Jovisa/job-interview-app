@@ -103,7 +103,7 @@ fetch('http://localhost:3333/api/reports?candidateId=' + url.get('id')).then(fun
             $('#modal-status').html(status);
             var notes = $('<div>');
             notes.html(report.note);
-            $('#modal-notes').html(notes)
+            $('#modal-notes').html(notes);
 
             var modal = $('#more-detail-modal');
             modal.modal();

@@ -8,6 +8,7 @@
     <title>Single Candidate</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-baseline">
                     <div class="col col-12 col-md-4 col-lg-3  text-center">
-                        <h4 class="mt-3 mb-3">Interview Reports</h4>
+                        <h4 class="mt-3 mb-3 main-header">Interview Reports</h4>
                     </div>
                     <div class="col col-12 col-md-4 col-lg-3  text-center">
                         <a class="mt-3 mb-3 btn btn-secondary" href="./candidates.html">Candidates</a>
@@ -27,54 +28,56 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="row my-4" id="candidate">
+    <div class="page">
+        <div class="container">
+            <div class="row py-4" id="candidate">
 
-            <div class="col col-12 col-md-4" id="avatar"></div>
+                <div class="col col-12 col-md-4" id="avatar"></div>
 
-            <div class="col col-12 col-md-8">
-                <div class="row">
-                    <div class="col col-12 col-md-6 mt-2">
-                        <div>Name:</div>
-                        <div id="name"></div>
+                <div class="col col-12 col-md-8">
+                    <div class="row">
+                        <div class="col col-12 col-md-6 mt-2">
+                            <div class="candidate-label">Name:</div>
+                            <div class="candidate-text" id="name"></div>
 
-                    </div>
-                    <div class="col col-12 col-md-6 mt-2">
-                        <div>Date of birth:</div>
-                        <div id="birthday"></div>
+                        </div>
+                        <div class="col col-12 col-md-6 mt-2">
+                            <div class="candidate-label">Date of birth:</div>
+                            <div class="candidate-text" id="birthday"></div>
 
-                    </div>
-                    <div class="col col-12 col-md-6 mt-2">
-                        <div>Email:</div>
-                        <div id="email"></div>
+                        </div>
+                        <div class="col col-12 col-md-6 mt-2">
+                            <div class="candidate-label">Email:</div>
+                            <div class="candidate-text" id="email"></div>
 
-                    </div>
-                    <div class="col col-12 col-md-6 mt-2">
-                        <div>Education:</div>
-                        <div id="education"></div>
+                        </div>
+                        <div class="col col-12 col-md-6 mt-2">
+                            <div class="candidate-label">Education:</div>
+                            <div class="candidate-text" id="education"></div>
 
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-
-        <div class="row" id="reports">
-            <h5>Reports</h5>
-            <table class="table">
-                <thead>
+            <div class="row" id="reports">
+                <h5 class="candidate-report">Reports</h5>
+                <table class="table reports-table">
+                    <thead>
                     <tr>
                         <th>Company</th>
                         <th>Interview Date</th>
                         <th>Status</th>
                         <th></th>
                     </tr>
-                </thead>
-                <tbody id="reports-wrapper">
-                </tbody>
-            </table>
-        </div>
+                    </thead>
+                    <tbody id="reports-wrapper">
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
 
     <div class="modal fade" id="more-detail-modal" tabindex="-1" role="dialog" aria-labelledby="more-detail-modal" aria-hidden="true">
@@ -83,6 +86,8 @@
                 <div class="modal-header row">
                     <div class="col">
                         <h5 class="modal-title" id="modal-candidate"></h5>
+                    </div>
+                    <div class="col">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -92,25 +97,25 @@
                     <div class="col col-12 col-md-5">
                         <div class="row">
                             <div class="col -12" >
-                                <div>Company</div>
-                                <div id="modal-company"></div>
+                                <div class="modal-text-label">Company</div>
+                                <div class="modal-text" id="modal-company"></div>
                             </div>
                             <div class="col-12" >
-                                <div>Interwiew Date</div>
-                                <div id="modal-date"></div>
+                                <div class="modal-text-label">Interwiew Date</div>
+                                <div class="modal-text" id="modal-date"></div>
                             </div>
                             <div class="col-12" >
-                                <div>Phase</div>
-                                <div id="modal-phase"></div>
+                                <div class="modal-text-label">Phase</div>
+                                <div class="modal-text" id="modal-phase"></div>
                             </div>
                             <div class="col-12">
-                                <div>Status</div>
-                                <div id="modal-status"></div>
+                                <div class="modal-text-label">Status</div>
+                                <div class="modal-text" id="modal-status"></div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col col-12 col-md-7" id="modal-notes">
+                    <div class="col col-12 col-md-7 modal-text" id="modal-notes">
                         <span>Notes</span>
                     </div>
                 </div>

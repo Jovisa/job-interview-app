@@ -50,6 +50,7 @@ fetch('http://localhost:3333/api/candidates').then(function (response) {
     var column = document.createElement('div');
     column.className = 'col col-12 col-sm-6 col-md-4 col-lg-3';
     var link = document.createElement('a');
+    link.className = 'candidate-link';
     var card = document.createElement('div');
     card.className = 'card my-2';
     var image = document.createElement('img');
